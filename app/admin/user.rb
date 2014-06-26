@@ -1,4 +1,5 @@
 ActiveAdmin.register User do
+  permit_params :guest, :phone_number, :name, :active
 
   
   # See permitted parameters documentation:
