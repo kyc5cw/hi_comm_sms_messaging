@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20140626155836) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
   create_table "messages", force: true do |t|
-    t.string   "message"
+    t.string   "content"
     t.boolean  "source"
     t.datetime "created_at"
     t.datetime "updated_at"

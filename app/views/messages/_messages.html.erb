@@ -1,0 +1,11 @@
+<div id="messages">
+<table>
+<% @messages.each do |message| %>
+<tr>
+  <div class="message">
+    <td><%= simple_format message.content %></td>
+  </div>
+  </tr>
+<% end %>
+</table>
+</div>
