@@ -48,7 +48,15 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise', github: 'plataformatec/devise'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
+gem 'twilio-ruby'
 
 group :development do
   gem 'better_errors'
+  gem 'rails_layout'
+end
+
+#for heroku deployment
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end

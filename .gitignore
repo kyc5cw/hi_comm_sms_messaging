@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#include prelang-init
+/prelang-init
+/gemfile.lock
