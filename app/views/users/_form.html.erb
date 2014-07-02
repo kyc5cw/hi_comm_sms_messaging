@@ -1,10 +1,12 @@
 <%= form_for @user do |f| %>
-  
   <div class="field">
-    <%= f.text_field :name, rows: 8 %>
+  	Name
+    <%= f.text_field :name %>
     </div>
+    <%= f.country_select :country %>
   <div class="field">
-    <%= f.text_field :phone_number, rows: 8 %>
+  	Number
+    <%= f.text_field :phone_number %>
   </div>
   <div class="actions">
     <%= f.submit %>

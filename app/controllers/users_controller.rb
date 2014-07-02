@@ -10,7 +10,9 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
-			@user.active = true
+		@user.active = true
+		@user.phone_number.phony_formatted!(:format => :international, :normalize => user_params["country"], :spaces => '')
+
 		if @user.save
 			redirect_to root_path
 		else
@@ -21,7 +23,7 @@ class UsersController < ApplicationController
 	private
 
 	def user_params
-		params.require(:user).permit(:name, :phone_number)
+		params.require(:user).permit(:name, :phone_number, :country)
 	end
 
 end

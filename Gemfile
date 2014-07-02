@@ -48,6 +48,11 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise', github: 'plataformatec/devise'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
+
+gem 'country_select', github: 'stefanpenner/country_select'
+#phone number validation
+gem 'phony_rails'
+#sms gateway provider
 gem 'twilio-ruby'
 
 group :development do
